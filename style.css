@@ -1,0 +1,100 @@
+/* Center the main container in the middle of the screen */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Container that stacks items on top of each other */
+.hero-container {
+    display: grid;
+    place-items: center; /* Centers both elements horizontally & vertically */
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Make both the image and card occupy the exact same grid slot */
+.sun-image,
+.card {
+    grid-area: 1 / 1;
+}
+
+/* Sun graphic sizing */
+.sun-image {
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Sits underneath */
+}
+
+/* Form card overlay */
+.card {
+    z-index: 2; /* Sits on top of the sun */
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 320px;
+}
+
+/* Create a neat card container around the form */
+.card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Arrange form fields vertically */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style the buttons side by side */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="button"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fab802;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #ff7b00d0;
+}
