@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    <body>
-        <h1>Sunny Son Solar Pannels</h1>
-        
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
-        <input type="submit" value="Sign Up">
-</html> 
+    <!-- Links your external style.css file -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="hero-container">
+    <img src="son.webp" class="sun-image" alt="Sun Graphic">
+    
+    <div class="card">
+        <h1>Sunny Son Solar Panels</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="button" value="Sign Up">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
